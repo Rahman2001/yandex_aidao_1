@@ -12,4 +12,7 @@ for dim in range(data_dim):
         for sdim in range(sub_dim):
             sub_sub_dim = numpy.ndim(data[dim][sdim])
             print(f'Sub-dimension: {sdim + 1}, sub-sub-dimension: {sub_sub_dim}')
+            if sdim == 0:
+                print(f'Example sub-sub-dim: {data[dim][sdim]}')
+                print(f'Number of elements in sub-sub-dim: {len(data[dim][sdim])}')
     print(" ------------------------------------------ ")
